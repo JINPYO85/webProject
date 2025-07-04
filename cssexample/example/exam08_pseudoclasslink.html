@@ -1,61 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>가상 클래스 선택자 확인</title>
+        <meta charset ="UTF=8">
+        <title> 도서 링크와 가상 클래스 선택자</title>
         <style>
-            h1::before{
-                content: "☆";
-                color : blue;
-            }
-            h1::after{
-                content: "★";
-                color : blue;
+            body{
+                font-family: Arial,sans-serif;
+                margin: 30px;
             }
 
-            #contents p:first-letter{
-                font-size: 28px;
-                background-color: gray;
-                color:white;
-                font-weight: bold;
+            h2{
+                color: #333;
             }
 
-          
-            #contents p:nth-child(even){ /*even number : 짝수 */
-                color:orange
+            a{
+                text-decoration:none;
             }
 
-            #contents p:nth-child(odd){ /*even number : 홀수 */
+            /* 가상 클래스 스타일링 */
+            a:link {
                 color:blue;
             }
-       
-            #word > div:nth-child(3){
-                color:red;
+            a:visited {
+                color:purple;
+            }
+            a:hover {
+                --font-size: 50px;
+                color:green;
+                background-color: #f0f0f0;
+                font-weight: bold;
+            }
+            a:active{
+                color: red;
+            }
+
+            input[type="text"]:focus{
+                outline: none;
+                background-color: lightyellow;
+                border: 2px solid orange;
             }
         </style>
 
-
+        <script>
+            function searchBook(){
+                const site = document.getElementById("bookSite").value;
+                if(site.trim() !== "") {
+                    location.href = site;
+                }
+            }
+        </script>
     </head>
     <body>
-        <h1> Famous Saying</h1>
-        <p> The world is a beautiful book, but of little use to him who cannot read it.</p>
-        <div id = "contents">
-            <p> 가장 위대한 영광은 한번도 실패하지 않음이 아니라 실패할 때마다 다시 일어 서는데에 있다. <br />
-            Our greatest glory is not in never falling, but in riging every time we fall.
-            </p>
-            <p>물방울이 바위를 뚫을 수 있는 것은 그 힘이 아니라 그 꾸준함이다</p>
-            <p>잠깐 한번 노력해 보는 것으로는 아무것도 이룰 수가 없다.</p>
-            <p>공부는 시간이 부족한 것이 아니라 노력이 부족한 것이다.</p>
-            <p>승자와 패자의 분리. 단 한가지는 승자는 실행하는 사람이라는 것이다.</p>
-            <p>우리가 쓰는 것 중 가장 값비싼 것은 시간이다.</p>
-            <p>시간은 돈으로도 권력으로도 살 수 없다.<br />
-            누구에게나 평등하게 주어진 시간을 부지런히 이용한 사람이 승자가 된다.</p>
-        </div>
+        <h2>📚도서 사이트 링크</h2>
+        <ul>
+            <li>
+                <a href="https://www.yes24.com" target="_blank">예스24</a> - 온라인 서점
+            </li>
 
-        <div id = "word">
-            <div> 소 : 소방차가 불난 집 불을 끈다.</div>
-            <div> 나 : 나는 신나게 구경을 했다.</div>
-            <div> 기 : 기절했다. 우리 집이었다.</div>
-        </div>
+            <li>
+                <a href="https://aladin.co.kr" target="_blank">알라딘</a> - 중고 및 새 책
+            </li>
+
+            <li>
+                <a href="https://book.naver.com" target="_blank">네이버 책</a> - 책 검색 및 리뷰
+            </li>
+        </ul>
+
+        <h3>🔎 원하는 도서 사이트 직접 이동 </h3>
+        <form>
+            <label for ="bookSite"> 사이트 주소 입력 :</label>
+            <input type="text" id="bookSite" placeholder="예: https://www.yes24.com">
+            <button type="button" onclick="searchBook()">이동</button>
+        </form>
+
     </body>
 </html>
