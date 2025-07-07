@@ -1,0 +1,45 @@
+caption{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table{
+    width: auto;
+    table-layout: 100%;
+    border: 1px solid black;
+    border-collapse:collapse;
+
+}
+
+td,th{
+    border : 1.0px solid #666;
+    text-align: center;
+    empty-cells: show;
+    vertical-align: middle;
+    padding: 10px,10px;
+}
+
+th:nth-child(2){
+    color: white;
+    background-color: #43cbff;
+    
+}
+
+th:nth-child(3){
+    color: white;
+    background-color: #81d733;
+}
+
+th:nth-child(4){
+    background-color:yellow;
+}
+
+th:nth-child(5){
+    background-color:orange;
+}
+
+th:nth-child(6){
+    color: white;
+    background-color:red;
+}

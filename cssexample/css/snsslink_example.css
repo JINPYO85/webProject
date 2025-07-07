@@ -1,0 +1,30 @@
+body{
+    background-color: #bbf1ef;
+    font-family: 'Verdana','Apple SD Gothic Neo','NanumGothic',sans-serif;
+    align-items: center;
+}
+
+img{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+p img{
+    border-radius: 50%;
+}
+
+table{
+    width: 300px;
+    
+}
+
+td{
+    box-sizing: 300px;
+    border-width: 300px;
+    color : white;
+    background-color: #ff9a9e;
+    text-align: center;
+    empty-cells: show;
+    vertical-align: middle;
+    padding: 10px,10px;
+}

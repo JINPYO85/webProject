@@ -1,0 +1,23 @@
+body{
+    font-family: 'Arial','Verdona',sans-serif;
+    color : #665544;
+    padding : 20px;
+
+    background-color: white;
+    background-image: url('../image/tulip.gif');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+        
+}
+
+em{
+    font-style: italic;
+    font-size: large;
+}
+     
+h2{
+    font-weight: bold;
+    font-size: 800;
+}
+
