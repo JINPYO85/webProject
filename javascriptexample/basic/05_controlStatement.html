@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="../css/05_controlStatement.css" />
+
+    </head>
+
+    <body>
+
+        <h2> 성적 구하기 </h2>
+        <table>
+            <tr>
+                <td>
+                    <input type = "label" name = "score" id = "kor" placeholder="국어점수(kor)">
+                    <label for = "kor"></label>
+                </td>
+                <td>
+                    <input type = "label" name = "score" id = "eng" placeholder="영어점수(eng)">
+                    <label for = "eng"></label>
+                </td>
+                <td>
+                    <input type = "label" name = "score" id = "math" placeholder="수학점수(math)">
+                    <label for = "math"></label>
+                </td>
+                <td>
+                    <button type="button" onclick="calScore()">성적 구하기</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>
+                    <input type = "label" name = "score" id = "sum" placeholder="합계" readonly />
+                    <label for = "sum"></label>
+                </td>
+                <td>
+                    <input type = "label" name = "score" id = "avg" placeholder="평균" readonly />
+                    <label for = "avg"></label>
+                </td>
+                <td>
+                    <input type = "label" name = "score" id = "grade" placeholder="학점" readonly />
+                    <label for = "grade"></label>
+                </td>
+            </tr>
+        </table>
+
+        <h2> 간단한 반복문 실습</h2>
+        <p>
+        1. 반복문을 사용 하여 h1~h6 태그로 Hello JavaScript를 출력해 주세요.<br />
+        2. 반복문을 사용하여 이미지를 출력해 주세요.
+        </p>
+        <button type="button" onclick="executeFor()">출력</button>
+        <div id="examFor"></div>
+        <div id="examForImg"></div>
+
+        <h2> 구구단 출력 </h2>
+        <button type="button" onclick="googoodan()">출력</button>
+        <div id="examgoogoodan"></div>
+
+        <script src = "../js/05_controlStatement.js"></script>
+    </body>
+</html>

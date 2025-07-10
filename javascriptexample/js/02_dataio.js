@@ -129,6 +129,9 @@ function fnChange(){
 
 function prtName(){
     //const name = document.getElementById("name");
-    //name.innerHTML = '<div '
-    //name.className = "box2";
+    //document.getElementById("namePrint").innerHTML
+    //=document.getElementById("name");
+
+    const nameValue = document.getElementById("name").value;
+    document.getElementById("namePrint").innerHTML = nameValue ? `${nameValue}님 반갑습니다.`: "이름을 입력해주세요";
 }
