@@ -10,6 +10,7 @@
 
     <body>
 
+        <div>
         <h2> 성적 구하기 </h2>
         <table>
             <tr>
@@ -45,7 +46,9 @@
                 </td>
             </tr>
         </table>
+        </div>
 
+        <div>
         <h2> 간단한 반복문 실습</h2>
         <p>
         1. 반복문을 사용 하여 h1~h6 태그로 Hello JavaScript를 출력해 주세요.<br />
@@ -54,10 +57,36 @@
         <button type="button" onclick="executeFor()">출력</button>
         <div id="examFor"></div>
         <div id="examForImg"></div>
+        </div>        
 
+        <div> 
+            <h2>숫자 맞추기 게임</h2>
+            <code> [참고] 1-10 사이의 난수 생성 : Math.floor(Math.random() * 10 +1;</code>
+            <p>
+                이 게임은 컴퓨터가 무작위로 생성한 숫자를 맞추는 게임입니다.
+                숫자는 1부터 10사이의 정수입니다.
+            </p>
+            <form>
+                <div class="number">
+                    <label> 숫자 : </label>
+                    <input type="text" id = "user" name="user" />
+                    <input type="button" value = "확인" onclick="guess()" />
+                </div>
+
+                <div>
+                    <label>추측횟수: </label>
+                    <input type = "text" id = "guesses" name = "guesses" readonly = "readonly" />
+                    <label>힌트: </label>
+                    <input type = "text" id = "result" name = "result" readonly = "readonly" />
+                </div>
+            </form>
+        </div>
+
+        <div>
         <h2> 구구단 출력 </h2>
         <button type="button" onclick="googoodan()">출력</button>
         <div id="examgoogoodan"></div>
+        </div>
 
         <script src = "../js/05_controlStatement.js"></script>
     </body>
