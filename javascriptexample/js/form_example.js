@@ -22,6 +22,7 @@ document.getElementById("print").addEventListener("click", () => {
     const output = document.getElementById("output").value.trim();
 
     const view = document.getElementById("view");
+    
     view.style.width = `${width}px`;
     view.style.height = `${height}px`
     view.style.backgroundColor = color;
