@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/form_example.css" />
+    </head>
+
+    <body>
+        <form>
+            <input type="text" id="word" name="word" /> <br />
+            <textarea rows="6" cols="28" id="result" readonly></textarea>
+        </form> 
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <form name ="form_example2" id = "form_example2">
+            <div id="exam2" name="exma2">
+                <label>너비(width):</label> 
+                <input type = "text" id = "width" name = "width" />
+                <label>높이(height):</label> 
+                <input type = "text" id = "height" name = "height"/>
+                <label>배경색</label> 
+                <input type="color" id = "color" name = "color" />
+                <br />
+                <label>출력할 문자열</label> 
+                <input type = "text" id = "output" name = "output"/>
+                <br />
+                <button type="button" id = "print" name="print"> 출력</button>
+            </div>
+            
+            <div id = "view" name="view">
+            </div>
+            
+        </form>
+        
+        <script src="../js/form_example.js"></script>
+    </body>
+</html>
